@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>Settings</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Appearance</h2>
+            <div class="setting-item">
+                <label for="dark-mode-toggle">Dark Mode</label>
+                <input type="checkbox" id="dark-mode-toggle">
+            </div>
+        </section>
+        <section>
+            <h2>Text Size</h2>
+            <div class="setting-item">
+                <label for="font-size">Font Size</label>
+                <select id="font-size">
+                    <option value="small">Small</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+        </section>
+        <section>
+            <h2>Notifications</h2>
+            <div class="setting-item">
+                <label for="notifications-toggle">Enable Notifications</label>
+                <input type="checkbox" id="notifications-toggle" checked>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button id="save-settings">Save Settings</button>
+        <p>Contact us: <a href="mailto:bytetrio@gmail.com">bytetrio@gmail.com</a></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

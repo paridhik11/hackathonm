@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Challenge</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Daily Challenge</h1>
+
+        <!-- Daily Question -->
+        <div class="question-container">
+            <h3 id="question-text">Loading Question...</h3>
+            <div class="options" id="options-container"></div>
+        </div>
+
+        <!-- Answer Result -->
+        <div id="result-message" class="result-message"></div>
+
+        <!-- Achievement Section -->
+        <div id="achievement-container" class="achievement-container" style="display: none;"></div>
+
+        <!-- Next Question Button -->
+        <button id="next-question-btn" class="next-btn" onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <script src="daily-challenge.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #fceca1, #ffa06c);
+    color: #333;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    font-size: 3rem;
+    color: #654ea3;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    position: relative;
+}
+
+.header::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 5px;
+    background: #ffcc00;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.avatar img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.quote {
+    font-size: 1.5rem;
+    color: #3b2f7d;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+
+/* Progress Bar */
+.progress-bar {
+    margin: 20px 0;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    width: 65%;
+    background: #ffcc00;
+    animation: progressGlow 2s infinite alternate;
+}
+
+@keyframes progressGlow {
+    0% { box-shadow: 0 0 5px rgba(255, 204, 0, 0.7); }
+    100% { box-shadow: 0 0 15px rgba(255, 204, 0, 1); }
+}
+
+/* Categories */
+.categories {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.category-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.category-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.buttons a {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(to right, #ff8800, #e65800);
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.buttons a:hover {
+    background: linear-gradient(to right, #e67700, #d84500);
+    transform: scale(1.05);
+}
+
+/* Background Graphics */
+.background-graphics div {
+    position: absolute;
+    background: rgba(91, 44, 44, 0.2);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
